@@ -4,7 +4,13 @@ import user from './user.json';
 export default function Profile() {
   return (
     <div>
-      <Profile />
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
     </div>
   );
 }
