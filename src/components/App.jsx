@@ -4,13 +4,15 @@ import user from './user.json';
 export default function Profile() {
   return (
     <div>
-      <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
-      />
+      {user.map(userCard => (
+        <Profile
+          username={userCard.username}
+          tag={userCard.tag}
+          location={userCard.location}
+          avatar={userCard.avatar}
+          stats={userCard.stats}
+        />
+      ))}
     </div>
   );
 }
