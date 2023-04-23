@@ -1,21 +1,35 @@
 import Profile from '../components/Profile';
-import user from './user.json';
+import user from '../user.json';
 
-export default function Profile() {
+export default function App() {
   return (
     <div>
-      {user.map(userCard => (
-        <Profile
-          username={userCard.username}
-          tag={userCard.tag}
-          location={userCard.location}
-          avatar={userCard.avatar}
-          stats={userCard.stats}
-        />
-      ))}
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
     </div>
   );
 }
+
+// export default function App() {
+//   return (
+//     <div>
+//       {user.map(userCard => (
+//         <Profile
+//           username={userCard.username}
+//           tag={userCard.tag}
+//           location={userCard.location}
+//           avatar={userCard.avatar}
+//           stats={userCard.stats}
+//         />
+//       ))}
+//     </div>
+//   );
+// }
 // export const App = () => {
 //   return (
 //     <div
