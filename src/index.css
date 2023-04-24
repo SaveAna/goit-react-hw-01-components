@@ -1,5 +1,29 @@
 @import-normalize; /* bring in normalize.css styles */
 
+:root {
+  --primary-white: #fff;
+  --primary-black: #000;
+
+  --profile-text-grey: #8e9ba8;
+  --profile-bg-grey: #d0dae6;
+
+  --stats-text-grey: #626a72;
+  --stats-bg-blue: #4dc6f6;
+  --stats-bg-violet: #a33cf6;
+  --stats-bg-crimson: #e74c67;
+  --stats-bg-azure: #20b8c5;
+
+  --friends-green: #46b24a;
+  --friends-red: #ff4e55;
+
+  --transaction-bg-blue: #00bcd5;
+  --transaction-bg-grey: #ecf1f4;
+  --transaction-separators: #e3e8ea;
+  --trasaction-text-grey: #6b7076;
+
+  --page-bg: #e7ecf2;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
