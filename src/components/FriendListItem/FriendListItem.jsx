@@ -8,7 +8,7 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
         style={{ backgroundColor: isOnline ? '#46b24a' : '#ff4e55' }}
       ></Status>
       <FriendPhoto src={avatar} alt="User avatar" width="48" />
-      <p class="name">{name}</p>
+      <p>{name}</p>
     </FriendCard>
   );
 };

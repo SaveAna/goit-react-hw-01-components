@@ -21,7 +21,7 @@ export const TableTitle = styled.th`
 
 export const TableRow = styled.tr`
   background-color: var(--primary-white);
-  &:nth-child(even) {
+  &:nth-of-type(even) {
     background-color: var(--transaction-bg-grey);
   }
 `;
