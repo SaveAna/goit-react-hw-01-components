@@ -5,6 +5,9 @@ import {
   InfoContainer,
   UserName,
   InfoText,
+  StatsContainer,
+  StatsItem,
+  StatsNumbers,
 } from './Profile.styled';
 
 const Profile = ({ username, tag, location, avatar, stats }) => {
@@ -17,20 +20,20 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
         <InfoText>{location}</InfoText>
       </InfoContainer>
 
-      <ul className="stats">
-        <li>
+      <StatsContainer>
+        <StatsItem>
           <span className="label">Followers</span>
-          <span className="quantity">{stats.followers}</span>
-        </li>
-        <li>
+          <StatsNumbers className="quantity">{stats.followers}</StatsNumbers>
+        </StatsItem>
+        <StatsItem>
           <span className="label">Views</span>
-          <span className="quantity">{stats.views}</span>
-        </li>
-        <li>
+          <StatsNumbers className="quantity">{stats.views}</StatsNumbers>
+        </StatsItem>
+        <StatsItem>
           <span className="label">Likes</span>
-          <span className="quantity">{stats.likes}</span>
-        </li>
-      </ul>
+          <StatsNumbers className="quantity">{stats.likes}</StatsNumbers>
+        </StatsItem>
+      </StatsContainer>
     </ProfileCard>
   );
 };

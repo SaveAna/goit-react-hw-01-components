@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const ProfileCard = styled.div`
-  max-width: 520px;
+  max-width: 400px;
   text-align: center;
   color: var(--profile-text-grey);
   border-radius: 7px;
@@ -36,4 +36,26 @@ export const UserName = styled.p`
 
 export const InfoText = styled.p`
   margin-top: 12px;
+`;
+
+export const StatsContainer = styled.ul`
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const StatsItem = styled.li`
+  background-color: var(--profile-bg-grey);
+  width: 100%;
+  padding: 30px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  border: 1px solid var(--transaction-separators);
+`;
+
+export const StatsNumbers = styled.span`
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-black);
+  margin-top: 8px;
 `;
