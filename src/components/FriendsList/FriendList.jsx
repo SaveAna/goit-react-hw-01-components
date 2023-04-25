@@ -1,8 +1,10 @@
 import PropTypes from 'prop-types';
 import FriendListItem from '../FriendListItem/FriendListItem';
+import { ListContainer } from './FriendList.styled';
+
 const FriendList = ({ friends }) => {
   return (
-    <ul class="friend-list">
+    <ListContainer>
       {friends.map(({ id, avatar, name, isOnline }) => (
         <FriendListItem
           key={id}
@@ -11,17 +13,17 @@ const FriendList = ({ friends }) => {
           isOnline={isOnline}
         />
       ))}
-    </ul>
+    </ListContainer>
   );
 };
 
 FriendList.propTypes = {
-  title: PropTypes.string.isRequired,
-  stats: PropTypes.arrayOf(
+  friends: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
-      percentage: PropTypes.number.isRequired,
+      id: PropTypes.number.isRequired,
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
     })
   ).isRequired,
 };

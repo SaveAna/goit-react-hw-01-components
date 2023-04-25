@@ -11,6 +11,7 @@ export const StatisticsContainer = styled.section`
   -webkit-box-shadow: 0px 0px 2px 0px rgba(237, 237, 237, 1);
   -moz-box-shadow: 0px 0px 2px 0px rgba(237, 237, 237, 1);
   box-shadow: 0px 0px 2px 0px rgba(237, 237, 237, 1);
+  overflow: hidden;
 `;
 
 export const StatisticsTitle = styled.h2`

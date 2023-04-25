@@ -14,7 +14,7 @@ const Statistics = ({ title, stats }) => {
       <StatList>
         {stats.map(({ id, label, percentage }) => (
           <StatItem key={id}>
-            <span className="label">{label}</span>
+            <span>{label}</span>
             <StatNumbers>{percentage}%</StatNumbers>
           </StatItem>
         ))}
