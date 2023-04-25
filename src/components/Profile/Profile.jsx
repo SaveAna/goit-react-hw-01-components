@@ -22,15 +22,15 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
 
       <StatsContainer>
         <StatsItem>
-          <span className="label">Followers</span>
+          <span>Followers</span>
           <StatsNumbers className="quantity">{stats.followers}</StatsNumbers>
         </StatsItem>
         <StatsItem>
-          <span className="label">Views</span>
+          <span>Views</span>
           <StatsNumbers className="quantity">{stats.views}</StatsNumbers>
         </StatsItem>
         <StatsItem>
-          <span className="label">Likes</span>
+          <span>Likes</span>
           <StatsNumbers className="quantity">{stats.likes}</StatsNumbers>
         </StatsItem>
       </StatsContainer>
@@ -43,13 +43,11 @@ Profile.propTypes = {
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  stats: PropTypes.arrayOf(
-    PropTypes.shape({
-      followers: PropTypes.number.isRequired,
-      views: PropTypes.number.isRequired,
-      likes: PropTypes.number.isRequired,
-    })
-  ).isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }).isRequired,
 };
 
 export default Profile;

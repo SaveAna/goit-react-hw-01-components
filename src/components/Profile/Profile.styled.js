@@ -54,7 +54,7 @@ export const StatsItem = styled.li`
 
 export const StatsNumbers = styled.span`
   display: block;
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 700;
   color: var(--primary-black);
   margin-top: 8px;
