@@ -22,9 +22,10 @@ export const ProfilePhoto = styled.img`
   border-radius: 50%;
   margin: 0px auto;
   object-fit: cover;
-  object-position: center center;
-  width: 200px;
-  height: 200px;
+  object-position: center;
+  width: 170px;
+  height: 170px;
+  background-color: var(--profile-bg-grey);
 `;
 
 export const UserName = styled.p`
