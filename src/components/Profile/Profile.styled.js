@@ -11,6 +11,7 @@ export const ProfileCard = styled.div`
   -webkit-box-shadow: 0px 0px 4px 2px rgba(212, 212, 212, 1);
   -moz-box-shadow: 0px 0px 4px 2px rgba(212, 212, 212, 1);
   box-shadow: 0px 0px 4px 2px rgba(212, 212, 212, 1);
+  overflow: hidden;
 `;
 
 export const InfoContainer = styled.div`
